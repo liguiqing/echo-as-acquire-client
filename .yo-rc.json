@@ -1,0 +1,47 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "nativeLanguage": "zh-cn"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "monolith",
+    "baseName": "EchoScan",
+    "testFrameworks": [],
+    "jhiPrefix": "echo",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-vuejs",
+        "version": "1.2.0"
+      }
+    ],
+    "enableTranslation": true,
+    "clientPackageManager": "npm",
+    "nativeLanguage": "zh-cn",
+    "languages": ["zh-cn"],
+    "blueprints": [
+      {
+        "name": "generator-jhipster-vuejs",
+        "version": "1.2.0"
+      }
+    ],
+    "skipServer": true,
+    "skipUserManagement": true
+  },
+  "generator-jhipster-vuejs": {
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "monolith",
+    "baseName": "EchoScan",
+    "useSass": true,
+    "clientPackageManager": "npm",
+    "clientFramework": "vue",
+    "clientTheme": "darkly",
+    "clientThemeVariant": "dark",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "databaseType": "Mysql",
+    "devDatabaseType": "Mysql",
+    "prodDatabaseType": "Mysql"
+  }
+}
