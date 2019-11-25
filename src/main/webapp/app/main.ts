@@ -24,11 +24,15 @@ import ConfigurationService from '@/admin/configuration/configuration.service';
 
 // jhipster-needle-add-entity-service-to-main-import - JHipster will import entities services here
 
+import iview from 'iview';
+import 'iview/dist/styles/iview.css';
+
 Vue.config.productionTip = false;
 config.initVueApp(Vue);
 config.initFortAwesome(Vue);
 bootstrapVueConfig.initBootstrapVue(Vue);
 Vue.use(Vue2Filters);
+Vue.use(iview);
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.component('jhi-item-count', JhiItemCountComponent);
 

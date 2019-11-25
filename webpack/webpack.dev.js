@@ -33,10 +33,14 @@ module.exports = merge(baseWebpackConfig, {
     port: 9060,
     proxy: [
       {
-        context: ['/api', '/services', '/management', '/swagger-resources', '/v2/api-docs', '/h2-console', '/auth'],
-        target: 'http://127.0.0.1:8080',
+        context: ['/acquire'],
+        target: 'http://localhost:15127',
         secure: false,
-        headers: { host: 'localhost:9000' }
+        changeOrigin: true,
+        // headers: { host: 'localhost:15127','Access-Control-Allow-Origin': '*' },
+        pathRewrite: {
+          '^/acquire': '/acquire'
+        }
       }
     ],
     watchOptions: {

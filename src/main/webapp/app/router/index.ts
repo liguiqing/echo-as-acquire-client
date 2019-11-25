@@ -16,7 +16,7 @@ const EchoAuditsComponent = () => import('../admin/audits/audits.vue');
 const EchoMetricsComponent = () => import('../admin/metrics/metrics.vue');
 /* tslint:disable */
 // jhipster-needle-add-entity-to-router-import - JHipster will import entities to the router here
-
+const ScanClient = () => import('../scan/scan.client.vue');
 Vue.use(Router);
 
 // prettier-ignore
@@ -27,6 +27,11 @@ export default new Router({
       path: '/',
       name: 'Home',
       component: Home
+    },
+    {
+      path: '/scan',
+      name: 'ScanClient',
+      component: ScanClient
     },
     {
       path: '/forbidden',
